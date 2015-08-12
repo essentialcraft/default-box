@@ -2,6 +2,10 @@
 
 #> /dev/null 2>&1
 
+echo "----Install pip"
+wget "https://bootstrap.pypa.io/get-pip.py"
+python get-pip.py
+
 echo "----Run a base bash script"
 sudo apt-get update
 sudo apt-get -y install git
