@@ -11,9 +11,12 @@ echo "----Install nodejs"
 curl --silent --location https://deb.nodesource.com/setup_0.12 | sudo bash -
 sudo apt-get install -y nodejs
 
-
+echo "----Install grunt"
 sudo npm install -g grunt-cli
 sudo npm install -g pm2
+
+echo "----Install docker"
+curl -sSL https://get.docker.com/ | sh
 
 #echo "Install build-essential, collectd"
 #sudo apt-get -y install build-essential git gdebi-core debhelper devscripts dh-make
